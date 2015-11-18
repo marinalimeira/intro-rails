@@ -39,7 +39,15 @@
 			<div class="slides">
         <section>
           <h1>Ruby on Rails</h1>
-          <h3>Rails Girls Maceió 2015</h3>
+        </section>
+
+        <section>
+          <h2>Sobre mim</h2>
+          <ul>
+            <li>Ciência da Computação</li>
+            <li>Roga Labs</li>
+            <li>Mozillian <3</li>
+          </ul>
 				</section>
 
          <section>
@@ -48,8 +56,219 @@
         </section>
 
         <section>
-          <h2>Linguagem de programação:<br />
-            Interprete para você falar com o computador</h2>
+          <h4>Desenvolvida por  Yukihiro Matsumoto</h4>
+          <h4>Lançada em 1995</h4>
+          <h4>Escrita em C</h4>
+          <h4>Open Source</h4>
+          <p><i>“I wanted a scripting language
+              that was more powerful than Perl,
+              and more object-oriented than Python.
+              That's why I decided to design my own language.”
+          </i><p>
+        </section>
+
+        <section>
+          <h2>Interactive Ruby Shell (IRB)</h2>
+        </section>
+
+        <section>
+          <h2>Orientada a Objetos</h2>
+          <pre><code data-trim contenteditable>
+5.times { puts "HelloMundo" }
+          </code></pre>
+          <br /> <br />
+          <h2>Interpretada</h2>
+        </section>
+
+        <section>
+          <h3>Tipagem dinâmica e forte</h3>
+          <h2>Inferência de tipos</h2>
+          <pre><code data-trim contenteditable>
+nome = 'marina'
+nome = true
+nome = 18
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Variáveis</h2>
+          <pre><code data-trim contenteditable>
+class User
+  def initialize(name)
+    @name = name
+  end
+end
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Tipos de Dados</h3>
+          <h2>Inteiros, reais, strings</h2>
+          <pre><code data-trim contenteditable>
+'marina'.class
+1.class
+4.2.class
+'42'.class
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Tipos de Dados</h3>
+          <h2>'string' ou "string"?</h2>
+          <pre><code data-trim contenteditable>
+nome = "Marina"
+"#{nome}"
+'#{nome}' # não funciona
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Tipos de Dados</h3>
+          <h2>Array</h2>
+          <pre><code data-trim contenteditable>
+a = ["a", "b", "c"]
+a.class
+a.index("a")
+a.index(0)
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Tipos de Dados</h3>
+          <h2>Hash</h2>
+          <pre><code data-trim contenteditable>
+h = { chave: "valor" }
+h.class
+h.keys
+k.values
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Operadores Lógicos</h2>
+          <table>
+
+            <tr><th>Operador</th><th>Função</th></tr>
+            <tr>
+              <th>
+                &&
+              </th>
+              <th>
+                E
+              </th>
+            </tr>
+            <tr>
+              <th>
+                ||
+              </th>
+              <th>
+                OU
+              </th>
+            </tr>
+            <tr>
+              <th>
+                !
+              </th>
+              <th>
+                NÃO
+              </th>
+            </tr>
+            <tr>
+              <th>
+                ==
+              </th>
+              <th>
+                IGUAL
+              </th>
+            </tr>
+            <tr>
+              <th>
+                !=
+              </th>
+              <th>
+                DIFERENTE
+              </th>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h3>Estruturas de Controle</h3>
+          <h2>if - elsif - else</h2>
+          <pre><code data-trim contenteditable>
+if num > 0
+  puts "Maior que 0"
+elsif num == 0
+  puts "Igual a 0"
+else
+  puts "Menor que 0"
+end
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Estruturas de Controle</h3>
+          <h2>case</h2>
+          <pre><code data-trim contenteditable>
+case num
+  when 42 then
+    "Vida, universo e tudo mais"
+  else
+    nil
+end
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Estruturas de Controle</h3>
+          <h2>while</h2>
+          <pre><code data-trim contenteditable>
+while true
+  puts 'true'
+end
+          </code></pre>
+          <h2>until</h2>
+          <pre><code data-trim contenteditable>
+until a == true
+  a == false
+end
+          </pre></code>
+        </section>
+
+        <section>
+          <h3>Estruturas de Controle</h3>
+          <h2>for</h2>
+          <pre><code data-trim contenteditable>
+for a in 1..10
+  puts a
+end
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Classes</h2>
+          <pre><code data-trim contenteditable>
+Class Pessoa
+  attr_acessor :nome
+
+  def initialize(nome)
+    @nome = nome
+  end
+
+  def to_s
+    "Olá, #{@nome}!"
+  end
+end
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Classes</h3>
+          <h2>Open Classes</h2>
+        </section>
+
+        <section>
+          <h2>Gems</h2>
         </section>
 
         <section>
@@ -62,51 +281,6 @@
           <img src="imgs/tools.png" style="height: 450px" />
           <h3>Framework:<br />
             Quantidade enorme de código pronto</h3>
-        </section>
-
-        <section>
-          <h2>Aplicação Web: <br />
-            um programa na internet</h2>
-        </section>
-
-        <section>
-          <img src="imgs/facebook.png" style="height: 170px" />
-        </section>
-
-        <section>
-          <img src="imgs/twitter.png" style="height: 170px" />
-        </section>
-
-        <section>
-          <img src="imgs/gmail.png" style="height: 350px" />
-        </section>
-
-        <section>
-          <img src="imgs/netflix.png" style="height: 230px" />
-        </section>
-
-        <section>
-          <h1>Como assim, na internet?</h1>
-        </section>
-
-        <section>
-          <img src="imgs/server.png" style="height: 450px" />
-          <h3>Servidor</h3>
-        </section>
-
-        <section>
-          <img src="imgs/server.png" style="height: 450px" />
-          <h3>Usuário - Servidor - Usuário</h3>
-        </section>
-
-        <section>
-          <img src="imgs/server.png" style="height: 450px" />
-          <h3 style="margin:0px; padding:0px">Nós vamos programar o servidor!</h3>
-        </section>
-
-        <section>
-          <img src="imgs/server-rails.png" style="height: 450px" />
-          <h3>Em Ruby, com Rails!</h3>
         </section>
       </div>
     </div>
